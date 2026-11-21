@@ -5,7 +5,8 @@ This is the artifact of the paper
 > Jiachen Shen and Hui Zhong. *Erasing Replayed Writes under RVWMO: A Mechanized Contraction Theorem.*
 > Submitted to the Journal of Automated Reasoning.
 
-Archived on Zenodo: the DOI is added when this version is released.
+Archived on Zenodo: version v1.0.0, DOI [10.5281/zenodo.24412451](https://doi.org/10.5281/zenodo.24412451)
+(all versions: [10.5281/zenodo.24412450](https://doi.org/10.5281/zenodo.24412450)).
 
 It contains the Rocq development, the 100 Isla litmus tests with their verbatim results, the Sail
 patches used to build the Isla model, and the simulator runs of the fault, repair and replay path.

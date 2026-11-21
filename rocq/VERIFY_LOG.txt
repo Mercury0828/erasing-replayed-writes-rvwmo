@@ -1,4 +1,4 @@
-# verify.sh run 2026-11-20T23:11:27-06:00
+# verify.sh run 2026-11-21T03:33:51-06:00
 == compiling ==
   ok   L1_abstract_erasure
   ok   L1b_edge_lift
@@ -170,9 +170,9 @@
   0-axiom  frozen_lanes_never_partial
 ALL GREEN: 58 files build, 109 headline theorems 0-axiom.
 
-real	5m32.336s
-user	2m52.262s
-sys	0m42.269s
+real	2m40.320s
+user	1m30.280s
+sys	0m17.889s
 verify.sh exit=0
 === FULL PRINT ASSUMPTIONS ===
 == coqc --version ==

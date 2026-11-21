@@ -74,7 +74,7 @@ End AcyclicityTransfer.
      po-between the pair, gmo_wf) => gamma_adj  [a sufficient condition for adjacency].
    - L2_consistency: co/rfe/fr ⊆ gmo, "a carrier-relation ⊆ gmo is acyclic", AND the concrete
      main-model union co∪rfe∪fr∪ppo assembled + proven acyclic (`Main_model_acyclic`), reduced to
-     the single obligation ppo⊆gmo [discharged for r1-r13 in PPO_frozen].
+     the single obligation ppo⊆gmo [discharged for r1-r13 in PPO_frozen, PPO_union].
    - L2_ppo: C3B acyclicity FROM a rank classification [H_co/H_rf/H_fr/H_poloc assumed], plus the
      acyclic_via_simulation transfer lemma used above.
    - L3_handler: state-update algebra for the save/body/restore shape [body_only_xT assumed; no

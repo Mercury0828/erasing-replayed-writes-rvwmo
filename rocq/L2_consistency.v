@@ -145,8 +145,8 @@ Section L2_consistency.
      co ∪ rfe ∪ fr ∪ ppo and prove it ⊆ gmo using the three derived inclusions (co/rfe/fr) plus a
      single named hypothesis `ppo_sub_gmo`. Instantiating C2_acyclic then gives the concrete
      main-model acyclicity check, reduced to exactly one obligation: ppo ⊆ gmo (the standard
-     endpoint of every axiomatic RVWMO consistency proof), which PPO_frozen discharges rule by rule
-     for r1-r13 (`ppoN_in_gmo`, `r2N_in_gmo`). *)
+     endpoint of every axiomatic RVWMO consistency proof), which PPO_frozen and PPO_union discharge
+     for r1-r13 (`ppoN_in_gmo`, `r2N_in_gmo`, `ppo_wit_in_gmo`). *)
 
   Variable ppo : Event -> Event -> Prop.
   (* NB : this hypothesis bundles PPO endpoint carrier-closure (In x/y E0) WITH the

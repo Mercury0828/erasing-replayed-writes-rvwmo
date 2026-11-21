@@ -48,9 +48,9 @@
        (`chk_ok_N (NChk _) := True`).  That is a label, not a verdict computed against the repaired
        PMP state.
      - Layer 4 supplies only the STRUCTURAL half of `StateWF` (chain existence + determinism, hole-free
-       and generated).  The semantic residue O1 (`step` is the real transition function), O2 (the
-       generated checks really succeed) and O3 (normal load values agree) is closed in Stage2_obligations;
-       decoding, token conformance, the precise-state condition and the final state are outside the model.
+       and generated).  Of the semantic residue, O2 (the generated checks really succeed) and O3 (normal
+       load values agree) are closed in Stage2_obligations, and O1 (`step` is the real transition function)
+       is its interface boundary; decoding, token conformance, precise state and final state are outside the model.
      - O1-c and B5 are UNCHANGED by this file.
      - `E_N` is a member of `Cand_N_struct`, NOT of the operational `Cand_N`; nothing here constructs an
        execution, a state chain over the REAL semantics, or a trap-free operational run.

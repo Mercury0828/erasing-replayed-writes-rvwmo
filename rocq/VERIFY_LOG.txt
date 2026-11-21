@@ -1,0 +1,400 @@
+# verify.sh run 2026-11-20T23:11:27-06:00
+== compiling ==
+  ok   L1_abstract_erasure
+  ok   L1b_edge_lift
+  ok   L2_gamma
+  ok   L2_consistency
+  ok   L2_ppo
+  ok   L3_handler
+  ok   L4_restart
+  ok   Clift_coherence
+  ok   Rlift_mainmodel
+  ok   Obs_final_state
+  ok   Adapter_L1_witness
+  ok   PPO_frozen
+  ok   PPO_union
+  ok   R2_counterexample
+  ok   Token_model
+  ok   Reexec_orientation
+  ok   Duplicate_facts
+  ok   Frozen_mainmodel
+  ok   Top_T1_skeleton
+  ok   T1_consistency
+  ok   T1_frozen
+  ok   T1_frozen_refinement
+  ok   T1_frozen_instantiated
+  ok   CG2_concrete_instance
+  ok   WIT1_nofault_lift
+  ok   Ctx_erasure
+  ok   Stage2_normal_candidate
+  ok   Stage2_state_chain
+  ok   Stage2_obligations
+  ok   Frozen_pmp
+  ok   Stage2_composed
+  ok   Stage2_endtoend
+  ok   Stage2_endtoend_v2
+  ok   Multi_lane
+  ok   Multi_lane_instance
+  ok   Alpha_regs
+  ok   Alpha_regs_instance
+  ok   ML_base
+  ok   ML_T1
+  ok   ML_instance
+  ok   ML_stage2
+  ok   ML_instance_stage2
+  ok   Gamma_adj_needed
+  ok   Perbyte
+  ok   Perbyte_example
+  ok   Gamma_adj_obs
+  ok   Pmp_partial
+  ok   Normal_instance
+  ok   ML_instance_pb
+  ok   ML_instance_2h
+  ok   ML_instance_unord
+  ok   Shape
+  ok   Shape_instances
+  ok   ML_instance_masked
+  ok   Gmo_consistency
+  ok   Gmo_counterpart
+  ok   Gmo_instances
+  ok   Single_writer_instance
+== Print Assumptions (headline theorems must be axiom-free) ==
+  0-axiom  mk_shape_is_reg_shape
+  0-axiom  O3_reads_keep_values
+  0-axiom  ML_T1_refinement
+  0-axiom  Nat2h.ml2_stage2_shape_instance
+  0-axiom  spec_example_bytes_writable
+  0-axiom  foot_dk_from_DupPair
+  0-axiom  ar_i_lane_conditions
+  0-axiom  stage2_endtoend_v2
+  0-axiom  ml_instance_observation
+  0-axiom  FRfF_in_gmo
+  0-axiom  mk_shape_not_unit
+  0-axiom  frozen_witness_passes_both_checks
+  0-axiom  r2N_sub_r2F
+  0-axiom  stage2_normal_candidate
+  0-axiom  ml2_instance_observation
+  0-axiom  unit_shape_disjoint
+  0-axiom  mask_shape_from_regs
+  0-axiom  Nat2hGmo.ml2_gen_load_value
+  0-axiom  po_twin_derived
+  0-axiom  single_carrier
+  0-axiom  rvwmo_perbyte_coherence
+  0-axiom  i_sources_are_keepers
+  0-axiom  mk_alpha_regs
+  0-axiom  natural_order_breaks_global_adj
+  0-axiom  frozen_witness_mainmodel_acyclic
+  0-axiom  mk_replay_same_shape
+  0-axiom  first_before_replay_gmo
+  0-axiom  ml_stage2_pb_instance
+  0-axiom  ppo_wit_lifts
+  0-axiom  mu_stage2_pb_instance
+  0-axiom  pmp_shape_lanes
+  0-axiom  gen_shape_pos
+  0-axiom  mu_T1_pb_instance
+  0-axiom  Nat2hGmo.ml2_gen_ppo_in_gmo
+  0-axiom  fault_main_from_gmo
+  0-axiom  i_value_byte0
+  0-axiom  ex_union_cycle
+  0-axiom  single_rf
+  0-axiom  i_C4_survives
+  0-axiom  dup_r12_derived
+  0-axiom  erase_all_preserves_C4
+  0-axiom  mu_instance_observation
+  0-axiom  normal_instance_pos
+  0-axiom  mk_T1_pb_instance
+  0-axiom  ML_T1_gmo
+  0-axiom  unit_shape_GenStore_iff
+  0-axiom  mk_instance_observation
+  0-axiom  ML_T1_refinement_pb
+  0-axiom  sw_instance_adj
+  0-axiom  MaskedGmo.mk_T1_gmo_instance
+  0-axiom  MaskedGmo.mk_gen_load_value
+  0-axiom  normal_instance
+  0-axiom  ar_i_alpha
+  0-axiom  alpha_regs_gives_Dup
+  0-axiom  stage2_endtoend
+  0-axiom  ml_concrete_instance
+  0-axiom  mu_po_not_total
+  0-axiom  cg2_concrete_instance
+  0-axiom  ml2_normal_instance
+  0-axiom  ml2_stage2_pb_instance
+  0-axiom  gamma_adj_needed_full
+  0-axiom  erase_all_preserves_values
+  0-axiom  spec_example_denied
+  0-axiom  O2_closed
+  0-axiom  Unord.mu_stage2_shape_instance
+  0-axiom  ar_i_dup
+  0-axiom  Nat2hGmo.ml2_T1_gmo_instance
+  0-axiom  frozen_pmp_lane_checks_succeed
+  0-axiom  stage2_shape
+  0-axiom  ML_T1_covers_single_lane
+  0-axiom  cg2_stage2_observation
+  0-axiom  ML_stage2_endtoend
+  0-axiom  L1_erasure_preserves_read_values
+  0-axiom  alleged_counterexample_is_cyclic
+  0-axiom  wit1_nofault_lift
+  0-axiom  union_to_perbyte
+  0-axiom  allows_iff_deciding_full
+  0-axiom  ml_T1_pb_instance
+  0-axiom  i_lanes_ok
+  0-axiom  mu_stage2_instance
+  0-axiom  ml2_stage2_instance
+  0-axiom  ar_i_alpha_fails_when_data_clobbered
+  0-axiom  final_state_preserved_exists
+  0-axiom  gamma_adj_needed_obs
+  0-axiom  ex_perbyte_ok
+  0-axiom  mk_replay_same_active
+  0-axiom  ex_load_value
+  0-axiom  stage2_composed
+  0-axiom  stage2_statewf_reduction
+  0-axiom  witness_perloc_acyclic
+  0-axiom  gamma_D_implies_gamma_adj
+  0-axiom  mu_normal_instance
+  0-axiom  ML_T1_refinement_instantiated
+  0-axiom  Main_model_acyclic
+  0-axiom  ml_stage2_instance
+  0-axiom  frozen_T1_refinement
+  0-axiom  retarget_preserves_C4
+  0-axiom  frozen_T1_refinement_instantiated
+  0-axiom  gen_ppo_in_gmo
+  0-axiom  replay_keeper_impossible_under_reexec
+  0-axiom  general_ctx_erasure
+  0-axiom  mk_stage2_shape_instance
+  0-axiom  gen_load_value
+  0-axiom  ml2_T1_pb_instance
+  0-axiom  ML_stage2_endtoend_pb
+  0-axiom  alpha_regs_gives_lane_conditions
+  0-axiom  MaskedGmo.mk_gen_ppo_in_gmo
+  0-axiom  ml_normal_instance
+  0-axiom  frozen_lanes_never_partial
+ALL GREEN: 58 files build, 109 headline theorems 0-axiom.
+
+real	5m32.336s
+user	2m52.262s
+sys	0m42.269s
+verify.sh exit=0
+=== FULL PRINT ASSUMPTIONS ===
+== coqc --version ==
+The Coq Proof Assistant, version 8.15.0
+compiled with OCaml 4.13.1
+== theorems: 109 ==
+---- RestartV.Gmo_consistency.FRfF_in_gmo
+Closed under the global context
+---- RestartV.L1_abstract_erasure.L1_erasure_preserves_read_values
+Closed under the global context
+---- RestartV.ML_T1.ML_T1_covers_single_lane
+Closed under the global context
+---- RestartV.Gmo_consistency.ML_T1_gmo
+Closed under the global context
+---- RestartV.ML_T1.ML_T1_refinement
+Closed under the global context
+---- RestartV.ML_T1.ML_T1_refinement_instantiated
+Closed under the global context
+---- RestartV.Perbyte.ML_T1_refinement_pb
+Closed under the global context
+---- RestartV.ML_stage2.ML_stage2_endtoend
+Closed under the global context
+---- RestartV.Perbyte.ML_stage2_endtoend_pb
+Closed under the global context
+---- RestartV.L2_consistency.Main_model_acyclic
+Closed under the global context
+---- RestartV.Gmo_instances.MaskedGmo.mk_T1_gmo_instance
+Closed under the global context
+---- RestartV.Gmo_instances.MaskedGmo.mk_gen_load_value
+Closed under the global context
+---- RestartV.Gmo_instances.MaskedGmo.mk_gen_ppo_in_gmo
+Closed under the global context
+---- RestartV.Shape_instances.Nat2h.ml2_stage2_shape_instance
+Closed under the global context
+---- RestartV.Gmo_instances.Nat2hGmo.ml2_T1_gmo_instance
+Closed under the global context
+---- RestartV.Gmo_instances.Nat2hGmo.ml2_gen_load_value
+Closed under the global context
+---- RestartV.Gmo_instances.Nat2hGmo.ml2_gen_ppo_in_gmo
+Closed under the global context
+---- RestartV.Stage2_obligations.O2_closed
+Closed under the global context
+---- RestartV.Stage2_obligations.O3_reads_keep_values
+Closed under the global context
+---- RestartV.Shape_instances.Unord.mu_stage2_shape_instance
+Closed under the global context
+---- RestartV.R2_counterexample.alleged_counterexample_is_cyclic
+Closed under the global context
+---- RestartV.Pmp_partial.allows_iff_deciding_full
+Closed under the global context
+---- RestartV.Alpha_regs.alpha_regs_gives_Dup
+Closed under the global context
+---- RestartV.Alpha_regs.alpha_regs_gives_lane_conditions
+Closed under the global context
+---- RestartV.Alpha_regs_instance.ar_i_alpha
+Closed under the global context
+---- RestartV.Alpha_regs_instance.ar_i_alpha_fails_when_data_clobbered
+Closed under the global context
+---- RestartV.Alpha_regs_instance.ar_i_dup
+Closed under the global context
+---- RestartV.Alpha_regs_instance.ar_i_lane_conditions
+Closed under the global context
+---- RestartV.CG2_concrete_instance.cg2_concrete_instance
+Closed under the global context
+---- RestartV.CG2_concrete_instance.cg2_stage2_observation
+Closed under the global context
+---- RestartV.Token_model.dup_r12_derived
+Closed under the global context
+---- RestartV.Multi_lane.erase_all_preserves_C4
+Closed under the global context
+---- RestartV.Multi_lane.erase_all_preserves_values
+Closed under the global context
+---- RestartV.Perbyte_example.ex_load_value
+Closed under the global context
+---- RestartV.Perbyte_example.ex_perbyte_ok
+Closed under the global context
+---- RestartV.Perbyte_example.ex_union_cycle
+Closed under the global context
+---- RestartV.Gmo_consistency.fault_main_from_gmo
+Closed under the global context
+---- RestartV.Obs_final_state.final_state_preserved_exists
+Closed under the global context
+---- RestartV.Reexec_orientation.first_before_replay_gmo
+Closed under the global context
+---- RestartV.Duplicate_facts.foot_dk_from_DupPair
+Closed under the global context
+---- RestartV.T1_frozen_refinement.frozen_T1_refinement
+Closed under the global context
+---- RestartV.T1_frozen_instantiated.frozen_T1_refinement_instantiated
+Closed under the global context
+---- RestartV.Pmp_partial.frozen_lanes_never_partial
+Closed under the global context
+---- RestartV.Frozen_pmp.frozen_pmp_lane_checks_succeed
+Closed under the global context
+---- RestartV.Frozen_mainmodel.frozen_witness_mainmodel_acyclic
+Closed under the global context
+---- RestartV.T1_frozen.frozen_witness_passes_both_checks
+Closed under the global context
+---- RestartV.L2_gamma.gamma_D_implies_gamma_adj
+Closed under the global context
+---- RestartV.Gamma_adj_needed.gamma_adj_needed_full
+Closed under the global context
+---- RestartV.Gamma_adj_obs.gamma_adj_needed_obs
+Closed under the global context
+---- RestartV.Gmo_counterpart.gen_load_value
+Closed under the global context
+---- RestartV.Gmo_counterpart.gen_ppo_in_gmo
+Closed under the global context
+---- RestartV.Shape.gen_shape_pos
+Closed under the global context
+---- RestartV.Ctx_erasure.general_ctx_erasure
+Closed under the global context
+---- RestartV.Multi_lane_instance.i_C4_survives
+Closed under the global context
+---- RestartV.Multi_lane_instance.i_lanes_ok
+Closed under the global context
+---- RestartV.Multi_lane_instance.i_sources_are_keepers
+Closed under the global context
+---- RestartV.Multi_lane_instance.i_value_byte0
+Closed under the global context
+---- RestartV.Shape_instances.mask_shape_from_regs
+Closed under the global context
+---- RestartV.ML_instance_masked.mk_T1_pb_instance
+Closed under the global context
+---- RestartV.ML_instance_masked.mk_alpha_regs
+Closed under the global context
+---- RestartV.ML_instance_masked.mk_instance_observation
+Closed under the global context
+---- RestartV.ML_instance_masked.mk_replay_same_active
+Closed under the global context
+---- RestartV.ML_instance_masked.mk_replay_same_shape
+Closed under the global context
+---- RestartV.ML_instance_masked.mk_shape_is_reg_shape
+Closed under the global context
+---- RestartV.ML_instance_masked.mk_shape_not_unit
+Closed under the global context
+---- RestartV.ML_instance_masked.mk_stage2_shape_instance
+Closed under the global context
+---- RestartV.ML_instance_2h.ml2_T1_pb_instance
+Closed under the global context
+---- RestartV.ML_instance_2h.ml2_instance_observation
+Closed under the global context
+---- RestartV.ML_instance_2h.ml2_normal_instance
+Closed under the global context
+---- RestartV.ML_instance_2h.ml2_stage2_instance
+Closed under the global context
+---- RestartV.ML_instance_2h.ml2_stage2_pb_instance
+Closed under the global context
+---- RestartV.ML_instance_pb.ml_T1_pb_instance
+Closed under the global context
+---- RestartV.ML_instance.ml_concrete_instance
+Closed under the global context
+---- RestartV.ML_instance.ml_instance_observation
+Closed under the global context
+---- RestartV.ML_instance_pb.ml_normal_instance
+Closed under the global context
+---- RestartV.ML_instance_stage2.ml_stage2_instance
+Closed under the global context
+---- RestartV.ML_instance_pb.ml_stage2_pb_instance
+Closed under the global context
+---- RestartV.ML_instance_unord.mu_T1_pb_instance
+Closed under the global context
+---- RestartV.ML_instance_unord.mu_instance_observation
+Closed under the global context
+---- RestartV.ML_instance_unord.mu_normal_instance
+Closed under the global context
+---- RestartV.ML_instance_unord.mu_po_not_total
+Closed under the global context
+---- RestartV.ML_instance_unord.mu_stage2_instance
+Closed under the global context
+---- RestartV.ML_instance_unord.mu_stage2_pb_instance
+Closed under the global context
+---- RestartV.ML_instance.natural_order_breaks_global_adj
+Closed under the global context
+---- RestartV.Normal_instance.normal_instance
+Closed under the global context
+---- RestartV.Normal_instance.normal_instance_pos
+Closed under the global context
+---- RestartV.Shape.pmp_shape_lanes
+Closed under the global context
+---- RestartV.Token_model.po_twin_derived
+Closed under the global context
+---- RestartV.PPO_union.ppo_wit_lifts
+Closed under the global context
+---- RestartV.PPO_frozen.r2N_sub_r2F
+Closed under the global context
+---- RestartV.Reexec_orientation.replay_keeper_impossible_under_reexec
+Closed under the global context
+---- RestartV.Multi_lane.retarget_preserves_C4
+Closed under the global context
+---- RestartV.Perbyte.rvwmo_perbyte_coherence
+Closed under the global context
+---- RestartV.ML_T1.single_carrier
+Closed under the global context
+---- RestartV.ML_T1.single_rf
+Closed under the global context
+---- RestartV.Pmp_partial.spec_example_bytes_writable
+Closed under the global context
+---- RestartV.Pmp_partial.spec_example_denied
+Closed under the global context
+---- RestartV.Stage2_composed.stage2_composed
+Closed under the global context
+---- RestartV.Stage2_endtoend.stage2_endtoend
+Closed under the global context
+---- RestartV.Stage2_endtoend_v2.stage2_endtoend_v2
+Closed under the global context
+---- RestartV.Stage2_normal_candidate.stage2_normal_candidate
+Closed under the global context
+---- RestartV.Shape.stage2_shape
+Closed under the global context
+---- RestartV.Stage2_state_chain.stage2_statewf_reduction
+Closed under the global context
+---- RestartV.Single_writer_instance.sw_instance_adj
+Closed under the global context
+---- RestartV.Perbyte.union_to_perbyte
+Closed under the global context
+---- RestartV.Shape_instances.unit_shape_GenStore_iff
+Closed under the global context
+---- RestartV.Shape_instances.unit_shape_disjoint
+Closed under the global context
+---- RestartV.WIT1_nofault_lift.wit1_nofault_lift
+Closed under the global context
+---- RestartV.Clift_coherence.witness_perloc_acyclic
+Closed under the global context
+pa exit=0

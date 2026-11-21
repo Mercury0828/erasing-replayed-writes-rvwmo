@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this artifact, please cite it as below."
+title: "Artifact: Erasing Replayed Writes under RVWMO: A Mechanized Contraction Theorem"
+type: software
+license: MIT
+repository-code: "https://github.com/Mercury0828/erasing-replayed-writes-rvwmo"
+authors:
+  - family-names: Shen
+    given-names: Jiachen
+    affiliation: University of Houston
+    orcid: "https://orcid.org/0000-0002-7233-497X"
+  - family-names: Zhong
+    given-names: Hui
+    affiliation: Miami University
+    orcid: "https://orcid.org/0009-0005-7952-007X"
+keywords:
+  - RISC-V
+  - vector extension
+  - weak memory models
+  - precise exceptions
+  - refinement
+  - Rocq

@@ -1,0 +1,23 @@
+-Q . RestartV
+L1_abstract_erasure.v
+L1b_edge_lift.v
+L2_gamma.v
+L2_consistency.v
+L2_ppo.v
+L3_handler.v
+L4_restart.v
+Clift_coherence.v
+Rlift_mainmodel.v
+Obs_final_state.v
+Adapter_L1_witness.v
+PPO_frozen.v
+PPO_union.v
+R2_counterexample.v
+Token_model.v
+Duplicate_facts.v
+Frozen_mainmodel.v
+Top_T1_skeleton.v
+T1_consistency.v
+T1_frozen.v
+T1_frozen_refinement.v
+Single_writer_instance.v

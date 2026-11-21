@@ -1,0 +1,26 @@
+{
+  "title": "Artifact: Erasing Replayed Writes under RVWMO: A Mechanized Contraction Theorem",
+  "upload_type": "software",
+  "description": "Artifact of the paper \"Erasing Replayed Writes under RVWMO: A Mechanized Contraction Theorem\" (Jiachen Shen and Hui Zhong), submitted to the Journal of Automated Reasoning: the Rocq development (58 files, Coq 8.15.0, 109 headline results checked by Print Assumptions), the 100 Isla litmus tests with their verbatim results, the Sail patches and rebuild recipe for the Isla model, and the simulator runs.",
+  "creators": [
+    {
+      "name": "Shen, Jiachen",
+      "affiliation": "University of Houston",
+      "orcid": "0000-0002-7233-497X"
+    },
+    {
+      "name": "Zhong, Hui",
+      "affiliation": "Miami University",
+      "orcid": "0009-0005-7952-007X"
+    }
+  ],
+  "license": "MIT",
+  "keywords": [
+    "RISC-V",
+    "vector extension",
+    "weak memory models",
+    "precise exceptions",
+    "refinement",
+    "Rocq"
+  ]
+}

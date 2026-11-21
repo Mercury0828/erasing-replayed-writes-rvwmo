@@ -306,9 +306,9 @@ Section AbstractModel.
      yields an L1-consistent contracted graph (gmo well-formedness on the restricted carrier + the
      carrier-relative C4 load-value rule for the retargeted rf).
      Input consistency is exactly the section interface — `gmo_wf` and the `rf_is_C4` hypothesis
-     (which IS `L1_consistent E0 rf`'s `l1_c4` field, asserted globally here); we do NOT take a
+     (which IS `L1_consistent E0 rf`'s `l1_c4` field, asserted globally here); the theorem has no
      separate `L1_consistent E0 rf` premise, since it would be redundant with that interface and the
-     proof would ignore it. So this is honestly "the section's input consistency is preserved by
+     proof would ignore it. So the theorem states "the section's input consistency is preserved by
      contraction", not a record-to-record map consuming an unused argument. *)
   Theorem L1_erasure_preserves_consistency :
     gmo_wf ->

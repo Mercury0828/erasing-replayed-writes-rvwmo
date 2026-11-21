@@ -144,9 +144,9 @@ Section L2_consistency.
      strict order is acyclic". Here we build the CONCRETE RVWMO main-model relation
      co ∪ rfe ∪ fr ∪ ppo and prove it ⊆ gmo using the three derived inclusions (co/rfe/fr) plus a
      single named hypothesis `ppo_sub_gmo`. Instantiating C2_acyclic then gives the concrete
-     main-model acyclicity check, honestly reduced to exactly one remaining obligation: ppo ⊆ gmo
-     (the standard endpoint of every axiomatic RVWMO consistency proof; discharging it means
-     mechanizing PPO rules r1-r13, the remaining concrete L2 work). *)
+     main-model acyclicity check, reduced to exactly one obligation: ppo ⊆ gmo (the standard
+     endpoint of every axiomatic RVWMO consistency proof), which PPO_frozen discharges rule by rule
+     for r1-r13 (`ppoN_in_gmo`, `r2N_in_gmo`). *)
 
   Variable ppo : Event -> Event -> Prop.
   (* NB : this hypothesis bundles PPO endpoint carrier-closure (In x/y E0) WITH the

@@ -17,9 +17,9 @@
      - po-loc edge among survivors: po is over the original events; restricting to survivors gives a
        fault po-loc edge (length-1 path, inclusion).
 
-   So this is the complete per-location Clift at the abstract level. What remains for the whole T1:
-   the analogous MAIN-model lift (co∪rfe∪fr∪ppo, incl. ppo edges under erasure), and threading the
-   concrete witness-execution construction that supplies these relations. Self-contained modulo
+   So this is the complete per-location Clift at the abstract level. The MAIN-model lift
+   (co∪rfe∪fr∪ppo, incl. ppo edges under erasure) is Rlift_mainmodel with PPO_frozen, and the concrete
+   witness execution that supplies these relations is built in ML_T1. Self-contained modulo
    L2_ppo; 0 Admitted / 0 axioms (Print Assumptions). Coq 8.15. *)
 
 Require Import Coq.Lists.List.

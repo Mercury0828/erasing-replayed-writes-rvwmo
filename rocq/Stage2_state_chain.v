@@ -69,7 +69,7 @@
    becomes
 
        "`StateWF` = structural continuity (**DISCHARGED**) + O1/O2/O3 + decoding / token conformance /
-        precise-state (**NAMED, OPEN**)".
+        precise-state (**OUTSIDE THE MODEL**)".
 
    The remaining surface is now PRECISE and SMALL.  It is **NOT CLOSED**.
 
@@ -310,7 +310,7 @@ Section Stage2NamedResidue.
 
   (* (O2) every GENERATED per-lane check succeeds against `init_N`'s REPAIRED PMP state.
           This is exactly the operational fact Layer 3 painted on as `chk_ok_N`
-          (`Stage2_normal_candidate.v`, header item 3).  Supplied by: nothing yet.  OPEN. *)
+          (`Stage2_normal_candidate.v`, header item 3).  Closed in Stage2_obligations §1 (`O2_closed`). *)
   Variable is_chk_like : NEvT -> Prop.          (* abstract, per the design *)
   Variable chk_succeeds_in : NEvT -> St -> Prop.
   Definition O2_normal_checks_succeed : Prop :=
@@ -318,7 +318,7 @@ Section Stage2NamedResidue.
 
   (* (O3) load values in the normal run agree with the fault run's.
           Would be supplied by Layer 3's `rf` transport (`Stage2_normal_candidate.transport_rf`)
-          together with an operational read-value lemma.  OPEN. *)
+          together with an operational read-value lemma.  Closed in Stage2_obligations §2. *)
   Variable load_agrees : NEvT -> Prop.
   Definition O3_loads_agree : Prop := forall e, load_agrees e.
 

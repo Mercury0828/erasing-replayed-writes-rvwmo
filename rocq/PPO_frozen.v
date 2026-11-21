@@ -10,8 +10,8 @@
        store). These are built from po + syntactic dependency relations + is_load/is_store/same_addr,
        which erasure (delete d, retarget rf d→k) does NOT change — it only alters rf. So a witness
        edge among survivors is literally a fault edge; the lift is length-1.
-     - rf-DEPENDENT (r2, r12): handled separately (r12 next; r2 is the rsw-monotonicity case the analysis
-       flagged) — NOT in this file yet.
+     - rf-DEPENDENT (r2, r12): proved further down in this file (r12 via the keeper's inherited
+       intermediate role, `r12N_lifts`; r2 via rsw monotonicity, `r2N_sub_r2F` and `r2N_lifts`).
 
    The key modelling fact this file uses: witness po / addr / data / ctrl / fence / same_addr /
    is_load / is_store are the fault ones restricted to survivors (erasure-invariance of syntactic
@@ -19,11 +19,11 @@
    is in the main-model union Rf. Self-contained; 0 Admitted / 0 axioms (Print Assumptions). Coq 8.15.
 
    Frozen-PPO status table (theorem-cited):
-     r1  active  — ppoN_lifts / nr1     r2  rf-dep  — PENDING (rsw monotonicity)
+     r1  active  — ppoN_lifts / nr1     r2  rf-dep  — r2N_sub_r2F / r2N_lifts
      r3  EMPTY                          r4  active  — ppoN_lifts / nr4
      r5  EMPTY   r6 EMPTY  r7 EMPTY  r8 EMPTY
      r9  active  — ppoN_lifts / nr9     r10 active  — ppoN_lifts / nr10
-     r11 active  — ppoN_lifts / nr11    r12 rf-dep  — PENDING (equal-duplicate path)
+     r11 active  — ppoN_lifts / nr11    r12 rf-dep  — r12N_lifts
      r13 active  — ppoN_lifts / nr13                                                     *)
 
 Require Import Coq.Lists.List.
@@ -40,7 +40,7 @@ Section PPOFrozen.
   Variable survivor : Event -> Prop.
   Variable Rf : Event -> Event -> Prop.                     (* fault main-model union; ppoF ⊆ Rf *)
 
-  (* Frozen active fault PPO rules (empty rules omitted; rf-dependent r2/r12 not here). *)
+  (* Frozen active fault PPO rules (empty rules omitted; rf-dependent r2/r12 are treated below). *)
   Inductive ppoF : Event -> Event -> Prop :=
   | fr1  : forall a b, po a b -> same_addr a b -> is_store b -> ppoF a b
   | fr4  : forall a b, fence a b -> ppoF a b

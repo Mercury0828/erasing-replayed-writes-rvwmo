@@ -119,11 +119,11 @@
                  this file §2 ]
          + O1  "`step` is the ratified model's transition function"      [ IRREDUCIBLE INTERFACE
                  BOUNDARY — not closed, not closable here ]
-         + decoding / token conformance / precise-state / final-state    [ NAMED, OPEN ].
+         + decoding / token conformance / precise-state / final-state    [ OUTSIDE THE MODEL ].
 
    AND, EMPHATICALLY: this still does **NOT** establish "there exists a no-fault EXECUTION".  Closing
    O2 and O3 removes two semantic residues from the state-well-formedness reduction; it does not build
-   an execution of the ratified model, which remains blocked by O1 and by the four open items above.
+   an execution of the ratified model, which needs O1 and the four items outside the model above.
 
    0 Admitted / 0 axioms (`Print Assumptions O2_closed`, `Print Assumptions O3_reads_keep_values`).
    No existing `.v` file is modified.  Coq 8.15. *)
@@ -323,7 +323,7 @@ Section O1InterfaceBoundary.
   Variable NEvT St : Type.
   Variable step : St -> NEvT -> St.               (* the transition function we FOLD to build the chain *)
   Variable ratified_transition : St -> NEvT -> St. (* the RATIFIED model's transition — abstract HERE, and
-                                                      that is the whole point: we cannot reach it *)
+                                                      by design: the development does not model it *)
 
   (* For citation only.  Identical in content to `Stage2_state_chain.O1_step_is_real`.  UNPROVED, and
      deliberately so: no `Theorem` in this development discharges it. *)

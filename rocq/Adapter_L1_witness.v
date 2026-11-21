@@ -14,9 +14,9 @@
    Consequence (stated, not re-proved here): Clift_coherence.`witness_perloc_acyclic` and hence
    T1_consistency.`witness_passes_both_checks` are, after this identification, statements about the
    ACTUAL carrier `contract_carrier d` with rf `rf_retarget d k rf` — no longer about arbitrary
-   relations. What still remains to fully close the gap: the analogous identification for the
-   main-model (Rlift) relations and for the fault-run co/fr/rf as L1's E0-relations, plus supplying
-   the concrete witness PPO and its `ppo_lifts`. Self-contained modulo L1 + Clift; 0 Admitted /
+   relations. The analogous identification for the main-model (Rlift) relations and the fault-run
+   co/fr/rf, and the concrete witness PPO with its lift, are in Rlift_mainmodel, PPO_frozen and
+   ML_T1 (`ML_T1_refinement`). Self-contained modulo L1 + Clift; 0 Admitted /
    0 axioms (Print Assumptions). Coq 8.15. *)
 
 Require Import Coq.Lists.List.

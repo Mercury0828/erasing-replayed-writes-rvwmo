@@ -283,7 +283,7 @@ the reason `riscv64_g2_trap_umode_defaults.toml` was created. Their fixed counte
 (`trap_store_faultB1_defaults`, `diag_umode_exit_fixed`) both run. `rc=137` is SIGKILL from the
 kernel OOM killer — the documented fork tower — not a timeout.
 
-One caveat on `trap_ecall`: it returns a verdict (`forbidden (0 of 4)`), so by the stated rule it
+A note on `trap_ecall`: it returns a verdict (`forbidden (0 of 4)`), so by the stated rule it
 counts as runnable, but that `forbidden` is degenerate. The file sets `mtvec` via a litmus
 `reset = {...}`, a path that is dead in this snapshot (documented in `trap_ecall_working`'s own
 header), so its asserted outcome is simply unreachable. It is a runnable test with a

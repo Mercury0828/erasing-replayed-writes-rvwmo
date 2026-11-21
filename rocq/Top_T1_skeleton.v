@@ -23,15 +23,15 @@
    RVWMO acyclicity checks". So the abstract transfer here is genuinely composed downstream.
 
    Scope. In this file the
-   Cn/Cf/Rn/Rf fed to the composition are abstract relations, not yet tied to ONE concrete execution obtained from L1's
+   Cn/Cf/Rn/Rf fed to the composition are abstract relations here; Adapter_L1_witness and ML_T1 instantiate them with ONE concrete execution obtained from L1's
    `contract_carrier` / `rf_retarget` — they are supplied abstractly. And the fault run's two
    acyclicity checks are hypotheses (the fault run is ASSUMED consistent).
 
-   What still remains for the whole T1: discharge `ppo_lifts` (concrete PPO r1-r13 under erasure);
-   construct the concrete witness execution and prove its relations ARE L1's contracted relations;
-   discharge L1-L4's interfaces from that model; and conclude the ∀fault∃no-fault OBSERVATIONAL-
-   refinement statement (the observation projection O and R0 — the part beyond consistency-
-   preservation). None of that is in this file. Coq 8.15. *)
+   The rest of T1 is in later files: `ppo_lifts` (concrete PPO r1-r13 under erasure, PPO_frozen);
+   the concrete witness execution and the proof that its relations ARE L1's contracted relations
+   (Adapter_L1_witness, ML_T1); and the ∀fault∃no-fault OBSERVATIONAL-refinement statement (the
+   observation projection O and R0 — the part beyond consistency-preservation; `ML_T1_refinement`,
+   `ML_T1_refinement_pb`). This file holds the acyclicity transfer only. Coq 8.15. *)
 
 Require Import Coq.Relations.Relations.
 Require Import RestartV.L2_ppo.
@@ -41,7 +41,7 @@ Section AcyclicityTransfer.
   Variable Event : Type.
 
   (* Main-model union (co∪rfe∪fr∪ppo) and per-location coherence union (co∪rf∪fr∪po-loc),
-     for the fault run (…f) and the intended no-fault witness (…n). These are placeholders: nothing
+     for the fault run (…f) and the intended no-fault witness (…n). These are parameters: nothing
      here constrains them to be those unions or to come from any execution. *)
   Variables Rf Rn Cf Cn : Event -> Event -> Prop.
 
@@ -70,11 +70,11 @@ End AcyclicityTransfer.
    concrete model in later files:
    - L1_abstract_erasure: given the section C4/gmo interface + gamma_adj + RO-K, contraction
      preserves the L1 consistency record and read values.
-   - L2_gamma: gamma_D + (r1, po-comparability, po-envelope, gmo_wf) => gamma_adj  [sufficiency only;
-     gamma_E undefined, strictness unproven].
+   - L2_gamma: gamma_D + (r1, initial writes first, po total on the faulting hart, no write of b
+     po-between the pair, gmo_wf) => gamma_adj  [a sufficient condition for adjacency].
    - L2_consistency: co/rfe/fr ⊆ gmo, "a carrier-relation ⊆ gmo is acyclic", AND the concrete
      main-model union co∪rfe∪fr∪ppo assembled + proven acyclic (`Main_model_acyclic`), reduced to
-     the single obligation ppo⊆gmo [PPO r1-r13 remains].
+     the single obligation ppo⊆gmo [discharged for r1-r13 in PPO_frozen].
    - L2_ppo: C3B acyclicity FROM a rank classification [H_co/H_rf/H_fr/H_poloc assumed], plus the
      acyclic_via_simulation transfer lemma used above.
    - L3_handler: state-update algebra for the save/body/restore shape [body_only_xT assumed; no

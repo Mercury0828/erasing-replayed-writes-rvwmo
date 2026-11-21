@@ -1,7 +1,7 @@
 (* L1b_edge_lift.v — the mathematical crux of the erasure edge-lift (Clift/Rlift).
 
    This is GENUINE T1 content, not spec transcription. The top-level `witness_acyclic_if_edges_lift`
-   (Top_T1_skeleton) leaves the edge-lift hypotheses Rlift/Clift unproven; those say every no-fault-
+   (Top_T1_skeleton) takes the edge-lift facts Rlift/Clift as premises; those say every no-fault-
    witness coherence edge is supported by a fault-run path with the same retained endpoints. The two
    witness edge kinds among survivors are:
 

@@ -10,8 +10,8 @@
      (per-location Cn and main-model Rn acyclic) — with NO `ppo_lifts` premise.
 
    This meets the goal (no ppo_lifts / ppo⊆gmo premise) for the consistency
-   half of T1. What remains for the closed ∀∃ T1: package the observation (read-values + final state)
-   alongside, exhibit the contracted execution, and quantify ∀X_F ∃X_N. Self-contained modulo Clift +
+   half of T1. The closed ∀∃ T1, with the observation (read values + final state), the contracted
+   execution and the quantification ∀X_F ∃X_N, is `ML_T1_refinement` (ML_T1.v), per byte in Perbyte.v. Self-contained modulo Clift +
    Frozen_mainmodel; 0 Admitted / 0 axioms (Print Assumptions). Coq 8.15. *)
 
 Require Import Coq.Lists.List.

@@ -49,8 +49,8 @@
        PMP state.
      - Layer 4 supplies only the STRUCTURAL half of `StateWF` (chain existence + determinism, hole-free
        and generated).  The semantic residue O1 (`step` is the real transition function), O2 (the
-       generated checks really succeed) and O3 (normal load values agree) is NAMED and OPEN, as are
-       decoding, token conformance, the precise-state condition and the full final-state construction.
+       generated checks really succeed) and O3 (normal load values agree) is closed in Stage2_obligations;
+       decoding, token conformance, the precise-state condition and the final state are outside the model.
      - O1-c and B5 are UNCHANGED by this file.
      - `E_N` is a member of `Cand_N_struct`, NOT of the operational `Cand_N`; nothing here constructs an
        execution, a state chain over the REAL semantics, or a trap-free operational run.

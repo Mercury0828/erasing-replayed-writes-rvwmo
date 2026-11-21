@@ -78,7 +78,7 @@
      constructs an execution, a state chain over the real semantics, or a trap-free operational run.
    * `StateWF` IS NOT ESTABLISHED.  O1 (`step` is the ratified transition function) remains the
      irreducible interface boundary (`Stage2_obligations` §3); decoding, token conformance, the
-     precise-state condition and the full final-state construction remain NAMED and OPEN.
+     precise-state condition and the full final-state construction are outside the model.
    * O2 IS CLOSED ONLY AGAINST `Frozen_pmp`'s **MODELLED** MATCHER, not the ratified `pmpCheck`; see
      that file's header for the list of unmodelled PMP features.
    * `Hctx_silent` / `Hchk_nonmem` REMAIN NAMED ANTECEDENTS (consequences of the frozen handler

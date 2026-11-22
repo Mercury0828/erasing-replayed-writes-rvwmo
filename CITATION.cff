@@ -3,9 +3,9 @@ message: "If you use this artifact, please cite it as below."
 title: "Artifact: Erasing Replayed Writes under RVWMO: A Mechanized Contraction Theorem"
 type: software
 license: MIT
-version: "1.0.0"
-doi: "10.5281/zenodo.24412451"
-date-released: "2026-11-21"
+version: "1.0.1"
+doi: "10.5281/zenodo.24432911"
+date-released: "2026-11-22"
 repository-code: "https://github.com/Mercury0828/erasing-replayed-writes-rvwmo"
 authors:
   - family-names: Shen
